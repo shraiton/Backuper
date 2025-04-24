@@ -633,9 +633,10 @@ marzban_template() {
         DIRECTORIES+=($DB_PATH)
     fi
 
+    echo "$db_type"
     if [[ "$db_type" == "sqlite3" ]]; then
-        BACKUP_DB_COMMAND="sqlite3 /var/lib/marzban/db.sqlite3 .dump > $DB_PATH.sql" #"mysqldump -h $db_host -P $db_port -u $db_user -p'$db_password' '$db_name' > $DB_PATH"
-        DIRECTORIES+=($DB_PATH.sql)
+        BACKUP_DB_COMMAND="sqlite3 /var/lib/marzban/db.sqlite3 .dump > $DB_PATH" #"mysqldump -h $db_host -P $db_port -u $db_user -p'$db_password' '$db_name' > $DB_PATH"
+        DIRECTORIES+=($DB_PATH)
     fi
 
     # Export backup variables
