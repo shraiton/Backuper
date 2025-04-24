@@ -42,7 +42,7 @@
 برای نصب آخرین نسخه، دستور زیر را اجرا کنید:  
 
 ```bash  
-sudo bash -c "$(curl -sL https://github.com/erfjab/Backuper/raw/master/backuper.sh)"  
+sudo bash -c "$(curl -sL https://github.com/shraiton/Backuper/raw/master/backuper.sh)"  
 ```  
 
 ## 💙 حمایت از پروژه  
