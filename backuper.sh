@@ -72,7 +72,7 @@ update_os() {
 
 install_dependencies() {
     local package_manager=$(detect_package_manager)
-    local packages=("wget" "zip" "cron" "msmtp" "mutt")
+    local packages=("wget" "zip" "cron" "msmtp" "mutt" "sqlite3")
 
     log "Installing dependencies: ${packages[*]}..."
     
